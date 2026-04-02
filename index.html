@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bintang</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:#eaeaea;
+    scroll-behavior:smooth;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 15%;
+}
+
+h1,h2{
+    margin-bottom:20px;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:20px 15%;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(8px);
+}
+
+nav a{
+    color:#aaa;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{color:white}
+
+/* HERO */
+#home{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#home h1{
+    font-size:40px;
+}
+
+#home p{
+    max-width:500px;
+    color:#bbb;
+}
+
+/* ABOUT */
+#about{
+    display:flex;
+    gap:50px;
+    align-items:center;
+}
+
+#about img{
+    width:220px;
+    border-radius:12px;
+}
+
+/* POET */
+#poet p{
+    max-width:700px;
+    line-height:1.9;
+    color:#ccc;
+}
+
+/* FAVORITES */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.card p{
+    margin-top:10px;
+    color:#aaa;
+}
+
+/* QUOTE */
+.quote{
+    text-align:center;
+    margin-top:60px;
+    color:#777;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div>Bintang</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#poet">Poet</a>
+        <a href="#fav">Favorites</a>
+    </div>
+</nav>
+
+<section id="home">
+    <h1>Muhammad Bintang Prabu Adinta</h1>
+    <p>
+        I focus on coding, cybersecurity, and understanding systems.
+        I’ve been a delegate for Australia, Syria, and now Romania in MUN.
+    </p>
+</section>
+
+<section id="about">
+    <img src="A1.jpg">
+    <div>
+        <h2>About Me</h2>
+        <p>
+            I like building things, breaking them, and improving them.
+            I’m interested in programming and cybersecurity.
+        </p>
+    </div>
+</section>
+
+<section id="poet">
+    <h2>Poet</h2>
+    <p>
+Nyanyian Sunyi Alamku<br><br>
+
+Di bawah langit yang diam namun luas,<br>
+aku menemukan suara yang tak bersuara—<br>
+angin yang lembut mengusap waktu,<br>
+membawa bisikan sunyi yang mengajakku hidup hari ini, bukan nanti.<br><br>
+
+Pepohonan berdiri tanpa keluh,<br>
+mengajarkan kuat tanpa perlu terlihat gagah;<br>
+daunnya jatuh bukan karena kalah,<br>
+melainkan karena tahu kapan harus melepaskan.<br><br>
+
+Dari sana aku mengerti,<br>
+hidup bukan tentang bertahan selamanya,<br>
+tetapi tentang berani berubah.<br><br>
+
+Sungai mengalir tanpa ragu,<br>
+melewati batu, luka, dan jarak panjang,<br>
+namun tetap jernih dalam tujuannya.<br><br>
+
+Seperti itu pula aku ingin berjalan—<br>
+tidak selalu mudah,<br>
+namun tetap setia pada arah yang kupilih.<br><br>
+
+Dan ketika senja turun perlahan,<br>
+alamku tidak pernah benar-benar pergi;<br>
+ia tinggal di dalam dada,<br>
+menjadi cahaya kecil yang terus mengingatkan:<br><br>
+
+hidup ini singkat,<br>
+maka jalani dengan penuh arti.
+    </p>
+</section>
+
+<section id="fav">
+    <h2>Favorites</h2>
+    <div class="grid">
+        <div class="card"><img src="d1.jpg"><p>Dead Poets Society</p></div>
+        <div class="card"><img src="p1.jpg"><p>Fight Club</p></div>
+        <div class="card"><img src="q1.jpg"><p>Forrest Gump</p></div>
+        <div class="card"><img src="w1.jpg"><p>Mr. Robot</p></div>
+        <div class="card"><img src="r1.jpg"><p>Breaking Bad</p></div>
+        <div class="card"><img src="s1.jpg"><p>Better Call Saul</p></div>
+    </div>
+
+    <div class="quote">
+        "fuck yourself if you think you can’t do it."
+    </div>
+</section>
+
+</body>
+</html>
